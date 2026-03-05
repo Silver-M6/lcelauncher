@@ -2,5 +2,5 @@
 set /p user="Username: "
 set /p exe="Path for the EXE: "
 set /p server="serverip: "
-
-start "" "%exe%" -name "%user%" -join "%server%"
+set /p port="serverport: "
+start "" "%exe%" -name "%user%" -ip "%server%" -port "%port%
